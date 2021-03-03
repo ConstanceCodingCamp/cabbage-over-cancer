@@ -1,0 +1,18 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @business.business_name %></h1>
+  <p>
+  <strong>Website:</strong>
+  <%= @business.website %> | 
+  <strong>Social media:</strong>
+  <%= @business.social_media %> |
+  <strong>Email:</strong>
+  <%= @business.email %>
+</p>
+</p>
+<br>
+    <%= link_to 'Edit', edit_business_path(@business), class: "btn btn-dark" %> 
+    <%= link_to 'Delete', @business, method: :delete, data: { confirm: 'Once deleted this action can not be undone.' }, class: "btn btn-danger" %> 
+    <%= link_to 'Back', businesses_path, class: "btn btn-success" %>
+  </div>
+</div>

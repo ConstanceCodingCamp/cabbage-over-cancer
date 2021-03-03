@@ -1,0 +1,7 @@
+<h1>Editing Business</h1>
+<br>
+<%= render 'form', business: @business %>
+<br>
+<%= link_to 'Show', @business, class: "btn btn-secondary" %>  
+<%= link_to 'Delete', @business, method: :delete, data: { confirm: 'Once deleted this action can not be undone.' }, class: "btn btn-danger" %> 
+<%= link_to 'Back', businesses_path, class: "btn btn-secondary" %>
